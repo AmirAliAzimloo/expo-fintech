@@ -41,7 +41,17 @@ const Page = () => {
             <Text style={{ fontSize: 22, fontWeight: '500' }}>Sign up</Text>
           </TouchableOpacity>
         </Link>
+
+        <Link
+          href={'/(authenticated)/(tabs)/home'}
+          style={[defaultStyles.pillButton, { flex: 1, backgroundColor: '#fff' }]}
+          asChild>
+          <TouchableOpacity>
+            <Text style={{ fontSize: 22, fontWeight: '500' }}>home</Text>
+          </TouchableOpacity>
+        </Link>
       </View>
+
     </View>
   );
 };
