@@ -1,6 +1,6 @@
 import Dropdown from '@/components/Dropdown';
 import RoundBtn from '@/components/RoundBtn';
-// import WidgetList from '@/components/SortableList/WidgetList';
+import WidgetList from '@/components/SortableList/WidgetList';
 import Colors from '@/constants/Colors';
 import { defaultStyles } from '@/constants/Styles';
 import { useBalanceStore } from '@/store/balanceStore';
@@ -50,7 +50,7 @@ const Page = () => {
 
       <Text style={defaultStyles.sectionHeader}>Transactions</Text>
       <View style={styles.transactions}>
-        {/* {transactions.length === 0 && (
+        {transactions.length === 0 && (
           <Text style={{ padding: 14, color: Colors.gray }}>No transactions yet</Text>
         )}
         {transactions.map((transaction) => (
@@ -73,10 +73,10 @@ const Page = () => {
             </View>
             <Text>{transaction.amount}€</Text>
           </View>
-        ))} */}
+        ))}
       </View>
       <Text style={defaultStyles.sectionHeader}>Widgets</Text>
-      {/* <WidgetList /> */}
+      <WidgetList />
     </ScrollView>
   );
 };

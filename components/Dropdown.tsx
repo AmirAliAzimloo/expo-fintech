@@ -15,7 +15,7 @@ const Dropdown = () => {
         <DropdownMenu.Item key="statement">
           <DropdownMenu.ItemTitle>Statement</DropdownMenu.ItemTitle>
           <DropdownMenu.ItemIcon
-            androidIconName="btn_star"
+            // androidIconName="btn_star"
             ios={{
               name: 'list.bullet.rectangle.fill',
               pointSize: 24,
